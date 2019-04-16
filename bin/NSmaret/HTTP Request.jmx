@@ -92,15 +92,6 @@
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-              <stringProp name="RegexExtractor.refname">CATEGORY_PATH</stringProp>
-              <stringProp name="RegexExtractor.regex">&lt;a href=&quot;(\/katalog\/category\/view\/.*)&quot;\ class=&quot;root\ parent&quot;&gt;\s*.*&lt;\/a&gt;</stringProp>
-              <stringProp name="RegexExtractor.template">$1$</stringProp>
-              <stringProp name="RegexExtractor.default">NOT_FOUND</stringProp>
-              <stringProp name="RegexExtractor.match_number">0</stringProp>
-            </RegexExtractor>
-            <hashTree/>
           </hashTree>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Open category" enabled="true">
@@ -391,6 +382,15 @@
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
+        <hashTree/>
+        <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+          <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+          <stringProp name="RegexExtractor.refname">CATEGORY_PATH</stringProp>
+          <stringProp name="RegexExtractor.regex">&lt;a href=&quot;(\/katalog\/category\/view\/.*)&quot;\ class=&quot;root\ parent&quot;&gt;\s*.*\s*&lt;\/a&gt;</stringProp>
+          <stringProp name="RegexExtractor.template">$1$</stringProp>
+          <stringProp name="RegexExtractor.default">NOT_FOUND</stringProp>
+          <stringProp name="RegexExtractor.match_number">0</stringProp>
+        </RegexExtractor>
         <hashTree/>
       </hashTree>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
