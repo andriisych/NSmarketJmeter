@@ -69,7 +69,7 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">6</stringProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
@@ -78,23 +78,11 @@
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Open main page" enabled="false">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Open main page" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
-          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
-            <intProp name="ActionProcessor.action">1</intProp>
-            <intProp name="ActionProcessor.target">0</intProp>
-            <stringProp name="ActionProcessor.duration">${___Random}</stringProp>
-          </TestAction>
-          <hashTree>
-            <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
-              <stringProp name="ConstantTimer.delay">3000</stringProp>
-              <stringProp name="RandomTimer.range">2000</stringProp>
-            </GaussianRandomTimer>
-            <hashTree/>
-          </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="387 /" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
@@ -154,23 +142,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Open category" enabled="false">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Open category" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
-          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
-            <intProp name="ActionProcessor.action">1</intProp>
-            <intProp name="ActionProcessor.target">0</intProp>
-            <stringProp name="ActionProcessor.duration">${___Random}</stringProp>
-          </TestAction>
-          <hashTree>
-            <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
-              <stringProp name="ConstantTimer.delay">3000</stringProp>
-              <stringProp name="RandomTimer.range">2000</stringProp>
-            </GaussianRandomTimer>
-            <hashTree/>
-          </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="677 ${CATEGORY_PATH}" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
@@ -230,23 +206,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Open product" enabled="false">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Open product" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
-          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
-            <intProp name="ActionProcessor.action">1</intProp>
-            <intProp name="ActionProcessor.target">0</intProp>
-            <stringProp name="ActionProcessor.duration">${___Random}</stringProp>
-          </TestAction>
-          <hashTree>
-            <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
-              <stringProp name="ConstantTimer.delay">3000</stringProp>
-              <stringProp name="RandomTimer.range">2000</stringProp>
-            </GaussianRandomTimer>
-            <hashTree/>
-          </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="697 ${PRODUCT_PATH}" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
@@ -309,23 +273,11 @@ vars.put(&quot;PRODUCT&quot;, product);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Add to cart" enabled="false">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Add to cart" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
-          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
-            <intProp name="ActionProcessor.action">1</intProp>
-            <intProp name="ActionProcessor.target">0</intProp>
-            <stringProp name="ActionProcessor.duration">${___Random}</stringProp>
-          </TestAction>
-          <hashTree>
-            <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
-              <stringProp name="ConstantTimer.delay">3000</stringProp>
-              <stringProp name="RandomTimer.range">2000</stringProp>
-            </GaussianRandomTimer>
-            <hashTree/>
-          </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="722 /index.php" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
@@ -440,23 +392,11 @@ vars.put(&quot;PRODUCT&quot;, product);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Chek-out" enabled="false">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Chek-out" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
-          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
-            <intProp name="ActionProcessor.action">1</intProp>
-            <intProp name="ActionProcessor.target">0</intProp>
-            <stringProp name="ActionProcessor.duration">${___Random}</stringProp>
-          </TestAction>
-          <hashTree>
-            <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
-              <stringProp name="ConstantTimer.delay">3000</stringProp>
-              <stringProp name="RandomTimer.range">2000</stringProp>
-            </GaussianRandomTimer>
-            <hashTree/>
-          </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="723 /katalog/checkout/step2" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
@@ -713,92 +653,14 @@ vars.put(&quot;PRODUCT&quot;, product);</stringProp>
         <hashTree/>
         <RecordingController guiclass="RecordController" testclass="RecordingController" testname="Recording Controller" enabled="true"/>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname=" 142 /v4/threatListUpdates:fetch" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="$ct" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">$ct</stringProp>
-                  <stringProp name="Argument.value">application/x-protobuf</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="key" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">key</stringProp>
-                  <stringProp name="Argument.value">AIzaSyC7jsptDS3am4tPx4r3nxis7IMjBc5Dovo</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="$httpMethod" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">$httpMethod</stringProp>
-                  <stringProp name="Argument.value">POST</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-                <elementProp name="$req" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">$req</stringProp>
-                  <stringProp name="Argument.value">ChUKE25hdmNsaWVudC1hdXRvLWZmb3gaJwgFEAEaGwoNCAUQBhgBIgMwMDEwARCupQYaAhgK0-sKYiICIAIoARonCAEQARobCg0IARAGGAEiAzAwMTABEMPpBRoCGAq3GdwcIgIgAigBGicIAxABGhsKDQgDEAYYASIDMDAxMAEQwPoFGgIYCvSrxu0iAiACKAEaJwgHEAEaGwoNCAcQBhgBIgMwMDEwARD2jwUaAhgKtJICDyICIAIoARolCAkQARoZCg0ICRAGGAEiAzAwMTABEBMaAhgKYXDEbyICIAIoAQ==</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">safebrowsing.googleapis.com</stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
-            <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">/v4/threatListUpdates:fetch</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="Accept-Language" elementType="Header">
-                  <stringProp name="Header.name">Accept-Language</stringProp>
-                  <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
-                </elementProp>
-                <elementProp name="X-HTTP-Method-Override" elementType="Header">
-                  <stringProp name="Header.name">X-HTTP-Method-Override</stringProp>
-                  <stringProp name="Header.value">POST</stringProp>
-                </elementProp>
-                <elementProp name="Cache-Control" elementType="Header">
-                  <stringProp name="Header.name">Cache-Control</stringProp>
-                  <stringProp name="Header.value">no-cache</stringProp>
-                </elementProp>
-                <elementProp name="Accept-Encoding" elementType="Header">
-                  <stringProp name="Header.name">Accept-Encoding</stringProp>
-                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
-                </elementProp>
-                <elementProp name="Pragma" elementType="Header">
-                  <stringProp name="Header.name">Pragma</stringProp>
-                  <stringProp name="Header.value">no-cache</stringProp>
-                </elementProp>
-                <elementProp name="User-Agent" elementType="Header">
-                  <stringProp name="Header.name">User-Agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">*/*</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname=" 143 /" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname=" 53 /" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">push.services.mozilla.com</stringProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
             <stringProp name="HTTPSampler.path">/</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -812,45 +674,21 @@ vars.put(&quot;PRODUCT&quot;, product);</stringProp>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
-                <elementProp name="Sec-WebSocket-Protocol" elementType="Header">
-                  <stringProp name="Header.name">Sec-WebSocket-Protocol</stringProp>
-                  <stringProp name="Header.value">push-notification</stringProp>
+                <elementProp name="Referer" elementType="Header">
+                  <stringProp name="Header.name">Referer</stringProp>
+                  <stringProp name="Header.value">https://${DOMAIN}/katalog/search/result</stringProp>
                 </elementProp>
                 <elementProp name="Accept-Language" elementType="Header">
                   <stringProp name="Header.name">Accept-Language</stringProp>
                   <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
                 </elementProp>
-                <elementProp name="Upgrade" elementType="Header">
-                  <stringProp name="Header.name">Upgrade</stringProp>
-                  <stringProp name="Header.value">websocket</stringProp>
-                </elementProp>
-                <elementProp name="Sec-WebSocket-Extensions" elementType="Header">
-                  <stringProp name="Header.name">Sec-WebSocket-Extensions</stringProp>
-                  <stringProp name="Header.value">permessage-deflate</stringProp>
-                </elementProp>
-                <elementProp name="Origin" elementType="Header">
-                  <stringProp name="Header.name">Origin</stringProp>
-                  <stringProp name="Header.value">wss://push.services.mozilla.com/</stringProp>
-                </elementProp>
-                <elementProp name="Sec-WebSocket-Version" elementType="Header">
-                  <stringProp name="Header.name">Sec-WebSocket-Version</stringProp>
-                  <stringProp name="Header.value">13</stringProp>
-                </elementProp>
-                <elementProp name="Pragma" elementType="Header">
-                  <stringProp name="Header.name">Pragma</stringProp>
-                  <stringProp name="Header.value">no-cache</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">*/*</stringProp>
-                </elementProp>
-                <elementProp name="Sec-WebSocket-Key" elementType="Header">
-                  <stringProp name="Header.name">Sec-WebSocket-Key</stringProp>
-                  <stringProp name="Header.value">PL+OR5Nhiyt3OtHvuz+upg==</stringProp>
+                <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                  <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                  <stringProp name="Header.value">1</stringProp>
                 </elementProp>
                 <elementProp name="Cache-Control" elementType="Header">
                   <stringProp name="Header.name">Cache-Control</stringProp>
-                  <stringProp name="Header.value">no-cache</stringProp>
+                  <stringProp name="Header.value">max-age=0</stringProp>
                 </elementProp>
                 <elementProp name="Accept-Encoding" elementType="Header">
                   <stringProp name="Header.name">Accept-Encoding</stringProp>
@@ -860,35 +698,80 @@ vars.put(&quot;PRODUCT&quot;, product);</stringProp>
                   <stringProp name="Header.name">User-Agent</stringProp>
                   <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</stringProp>
                 </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</stringProp>
+                </elementProp>
               </collectionProp>
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname=" 144 /downloads?client=navclient-auto-ffox&amp;appver=66.0&amp;pver=2.2" enabled="true">
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname=" 139 /katalog/products/display" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
-                <elementProp name="" elementType="HTTPArgument">
+                <elementProp name="pricefrom" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">allow-flashallow-digest256;a:1490633678&#xd;
-base-track-digest256;a:1554221473&#xd;
-block-flash-digest256;a:1496263270&#xd;
-block-flashsubdoc-digest256;a:1512160865&#xd;
-except-flash-digest256;a:1494877265&#xd;
-except-flashallow-digest256;a:1490633678&#xd;
-except-flashsubdoc-digest256;a:1517935265&#xd;
-mozplugin-block-digest256;a:1471849627&#xd;
-mozstd-trackwhite-digest256;a:1554221473&#xd;
-</stringProp>
+                  <stringProp name="Argument.name">pricefrom</stringProp>
+                  <stringProp name="Argument.value"></stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="priceto" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">priceto</stringProp>
+                  <stringProp name="Argument.value"></stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="categorys[]" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">categorys[]</stringProp>
+                  <stringProp name="Argument.value"></stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="characteristics[1][]" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">characteristics[1][]</stringProp>
+                  <stringProp name="Argument.value"></stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="characteristics[2][]" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">characteristics[2][]</stringProp>
+                  <stringProp name="Argument.value"></stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="urlUnijaxFilter" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">urlUnijaxFilter</stringProp>
+                  <stringProp name="Argument.value">L2thdGFsb2cvcHJvZHVjdHMvZGlzcGxheQ==</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="limitstart" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">limitstart</stringProp>
+                  <stringProp name="Argument.value">0</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="prepareUnijaxFilter" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">prepareUnijaxFilter</stringProp>
+                  <stringProp name="Argument.value">1</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">shavar.services.mozilla.com</stringProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">/downloads?client=navclient-auto-ffox&amp;appver=66.0&amp;pver=2.2</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+            <stringProp name="HTTPSampler.path">/katalog/products/display</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -901,25 +784,184 @@ mozstd-trackwhite-digest256;a:1554221473&#xd;
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
+                <elementProp name="Referer" elementType="Header">
+                  <stringProp name="Header.name">Referer</stringProp>
+                  <stringProp name="Header.value">https://${DOMAIN}/katalog/search/result</stringProp>
+                </elementProp>
                 <elementProp name="Accept-Language" elementType="Header">
                   <stringProp name="Header.name">Accept-Language</stringProp>
                   <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
                 </elementProp>
+                <elementProp name="X-Requested-With" elementType="Header">
+                  <stringProp name="Header.name">X-Requested-With</stringProp>
+                  <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                </elementProp>
                 <elementProp name="Content-Type" elementType="Header">
                   <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">text/plain</stringProp>
-                </elementProp>
-                <elementProp name="Cache-Control" elementType="Header">
-                  <stringProp name="Header.name">Cache-Control</stringProp>
-                  <stringProp name="Header.value">no-cache</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
                 </elementProp>
                 <elementProp name="Accept-Encoding" elementType="Header">
                   <stringProp name="Header.name">Accept-Encoding</stringProp>
                   <stringProp name="Header.value">gzip, deflate, br</stringProp>
                 </elementProp>
-                <elementProp name="Pragma" elementType="Header">
-                  <stringProp name="Header.name">Pragma</stringProp>
-                  <stringProp name="Header.value">no-cache</stringProp>
+                <elementProp name="User-Agent" elementType="Header">
+                  <stringProp name="Header.name">User-Agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">text/plain, */*; q=0.01</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname=" 140 /submit/telemetry/3d85870f-f597-459e-96fc-c101b9116e96/modules/Firefox/66.0.3/release/20190409155332?v=4" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&#x1f;�&#x8;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#xd;
+�}iw�F��_���|Rѹ/:�f^��Ƣ�&amp;%yz���&#x3;V�$��&#x1a;@qi&#x1f;���D-\��V��&#x1e;[��&#x19;Y@ddč&#x1b;�	����aY&#x1e;�=�-&amp;�i�&#x1c;�9�&amp;�#�(�$�&#x1a;]q-G��r���x4�&#x8;_j�E�&#x5;�&#x1d;�e�V��/�t&#x11;��&#x1e;!6��#Bo�&#xf;e&apos;���&#xb;=o˺���oٛ�b��V���o�8.��MՖ�vU���+1&#x12;&#xc;�r����w��u&#x11;C&#x1a;sN)&#x1;Ѽ�����˫����&#x1f;&#xb;q�N(4M�f9-&#x1e;&gt;�%��|����t�j:-�	z�W�z��}�&#x1c;/f�Z���`�Ys;N��)��r&#xd;
+�u9-��&lt;�&#x13;.T&lt;L&#x17;�$�k�&#x13;~�3����c���Z���Lږ���&#xf;�%���V��C��Ax&#x1c;��FF�&#x2;s�/#�#&#x6;�#&#x1;g&#xc;q&quot;&#x11;UIٲn/V����&#x1f;&#x7;~�&#x16;�rQ�g��7;���d:=��/&#x14;[��T+�&#x10;�B6&#x1a;&#x3;3D�U*FD�w��H�s�0&#x2;�����0���U�z�,�ڣ_+����^?��&#xf;�=%&apos;���&#x17;�})k�&#xb;&#x10;�ԎZM|�Zc�d�X����:p*m�~��&#x16;�&#x8;&#x19;ӭ��&#x4;/�i(�&quot;F3&apos;#Ĝ�Ƒ&#x18;�VL�����hx����l�ށ���&#x15;��bYe�&#x17;�7V[&#x1b;&#x3;�V��&#xd;�&#x4;&#x3;&quot; &#x1;&#xe;H�^��a����یf&#x1b;�K��&#xc;X�2�(�&#x5;��jC4���h�F���ߪVS�o&#x16;MN���b&#xd;
+!f&#x10;QZP+QT!r��c�Jj��&#x1f;&#xe;&#x7;jv~��?��b�&#x12;��zzq�9�LZ&#x14;&#x5;r&#xd;
+k�&#x1c;,F&#x1f;��Z��zA��4[��;O��&#x13;����&quot;�a&#x17;��&#x12;3M5V&#xe;�C&#x8;�&#x18;0&#x8;f�&#x7f;\OW9嶒�n0}&#x18;K&#x0;Yϝ%����gw����w�&#x1;3��&#xf;�`5o�Y���l&quot;���&#x1;�&#x1;�&#x11;�X0L[�i&#x8;�xGC���܌�&#x4;�&#x13;&quot;$&#x2;�_��&#x1e;u&apos;��7�t��t+�A��Zr&#x3;�k�&#x14;&#x11; �&#x11;�Y�&#x1;�V������;�&#x1b;1��r�&#x1;&#x15;�A&#x12;��y���Z&#x4;�C&#x12;&#x5;&#x13;�͠&#x6;�&#x1c;�/���!7��[�&#xd;(&#x8;��P��&#x4;+&#x12;E&#x15;%�&#x11;�=!2��&#xc;���z��Ke�T;�&#x1f;�� &#xe;Z&#x3;-�&#x1a;�(&#x2;2�&#x4;&#x1e;���il&#x8;&#xd;
+q(�.;&#x15;��jV��m�d&#xc;��|��RW&#x3;Sj�&#x15;1	�3&#x1c;��&#xe;S��a&#x11;i&#x13;��uՔu6�n&#x4;/���*Q��&#x3;&#x12;�`�9S�qh��&#x1b;�&#x1f;&#x8;����k��UsJV&#x19;�6��f��h�?Y�&#x16;�&#x19;I �qI&#x8;%&#x2;��eh|��~�y�r=��&#x13;Σ0p&#x17;O&#x0;Z 28F�K&#x5;�6R����cw��U�&#x17;?�^j&#x7;q&#xd;
+�IJB��D���&#x16;&#xb;�;�&quot;a�p�C�g�k����üN�cQXqK�&#x3;��1�Y@d%&#x8;��9&quot;��O&#xd;
+؁����4Kܫ�,3�&#xd;
++��&#xf;�(�&#x5;���:T:�&lt;�&#x4;���:pV��B97&#x2;ӌ���6�u4�#&lt;�e����&#x1c;��� &#x1d;&#xd;
+�K!e�܀� �&#x15;&#x1e;&#x1;FfG��h���d�B������W��y��&#x1b;���&#x1a;�N��&#x13;ܪD&amp;��1r�]&#x7;rS&#x16;˯&#x1e;���=_�&#xc;&#x0;&#xc;&#x12;&apos;&#x12;&#x2;E&#xf;����&#x6;h�&#xd;
+X��&#x18;���I�8`2���&#x15;�&#x1a;{g���&#x18;&apos;��8z��`&#x1;*&#xe;��7�0Ƌ9\��ꁼ�ߏr&quot;&#x10;��&#x1b;�0��y&apos;B`��H���9��b\L�&gt;ҟw�F%��&#x0;hz���p�q@&#x1a;]p�p����;&#xe;dV�7_=������E��D&#x18;0q&#x0;�&#x4;��h*������@�8&#x8;u_�\&#xb;��u&#x1;kN&#x4;7�x�1sT&quot;&#x6;&#x14;���&#x1a;&#x1d;Wմl&#x1e;���}�P�_y9 (�=&#x15;H&#x19;K&#x2;��C��n=�XE��g&#x81;&#x6;T�o�z1���&#xf;��wze&#x2;q�J�0&#x1;F�&#x0;�e��1��&#x17;D�&#x2;&#x7;&#x1a;Ҫ��U����yѿ�`.(&#x5;u�&#x2;J����)����)R����n�մ�.&#x1f;گ&#xf;��7zÁ@!&#x6;&amp;�x&#xb;�c��&#x6;&#x1b;������&#x7;&#x1d;μihn�95���ID=UPvh¸�nK0�^�߲��]�	z&#xb;.�;&#x13;&quot;��&#x8;&#x3;^�4���4&#x10;V&#xc;Lz ���&#xf;���Zm6�i&#x15;&#x3;��Z����r,D��y���&#x1a;����_/~q?�1�b�%c/	&lt;�H�b�0��&#x2;���&#xb;&#xb;&#x7f;��{(��k�Z���G�&#x1d;�Qqi��&#x1;!f)x��	f&#x14;��&#xd;����zv�_&#x16;؉z&#x1c;�G�$&#x4;�&#x10;@����k&#xc;|�&#x11;�&lt;�x(ݦ��鴺�-��D/u#&amp;&#x8;��&#x12;P&#x16;&#x18;j�w&#xb;��U��N�&#x19;�h��r&#x1b;!&#x14;-�n*]�&#x14;&#x7bf;�NesSNs[R��($�ML&#x7;�&#x3;���#&#xd;
+R:&#xf;&#x10;��&#x15;���xQ疺7�&#x1e;�&#x0;��!pŨ�:�t�,��&#x7;c�J&#x1a;��&#x17;�=&#x1b;&#x4;[�K�&lt;�&#x9f;&#x1a;gp4�A1&#x1a;�P�r�&#x15;5r&#xf;9�����u�I��d_�t�|��bӣ��ȹ0P[J&#x14;�6&#x12;�	9�&#x6;��E���#�`]���&#xd;
+r|Fǭ��&#x1b;Ԋ�F�p�&quot;q&#x16;+&quot;00@b�=g���rqW&apos;&#x1d;r�mE=��&lt;&#xd;
+��	�&#xd;�^F�	&#x14;SX&#x1b;&amp;�`�����孶��&quot;���7�&#x11;A�g1h�	�XU�G;�f�]�b��&#x13;�?�;�M���&#x1a;�=$&#x6;&#x5;&#x15;&#x3;v:� &#x5;&#x2;P&#x6;&gt;�&#x19;&#x14;���oZ\or;?[I?{q�&#xd;�1J&#x3;� &#x1d;$�`0&#xe;&#x14;����vE&#x17;�2������I&#x5;:@&#x8;�ȑ&#x6;g�D&#xb;�D0�D�&#x7;D&#x15;���c���f���&#x0;�&#x10;F&quot;&#x7;Ƃ�U&#xb;m�E&lt;&#x1a;&#x1f;�Ã٪��ɓ�4�&#x19;{a&#x6;�&#x6;E���z�RcBP&#xc;�&#x11;$T)�`&#x1b;&lt;�.�p��Y5KܯZ��&#xe;r&#x0;WPL&quot;�L:uBX�&#x8;c�֕��U4&#x17;&#x1f;pv}�h���%&#x12;&#x18;&#xd;
+�&#x10;��P�&#x8;��S��&#x18;�&#x1;�&#x1d;J����ә9{�=�Ю�9DK�n,!^&#x11;&#x4;�&#xb;�A&#x19;kQԚ8��/�&#x1f;�����&#x1c;�v�=����&#x4;I�$�-SJ␖�y&#x2;0&#x19;&#x7;�b&#x1a;��d��j#�I��&#x1a;&#x1a;�&#x4;�q&#xf;��m�&#x3;!�	��&#x15;�?�Z�}˽&#x1b;�}�(�i�&#x17;h���9.�!P�&#x8;&#x7;�A�`�&#xf;5���O&#x17;9&#xc;&#x3;��֫�I�&#x0;�&apos;bL9U&#x18;&#x10;�YeD&#x4;�&#x5;�S�&#x1;y��w&#x11;��_Z�L�&#x11;`M����{���P�K-���h�Q~�-�_�&#x7;�)&#xf;����U&#xe;g&#xd;&amp;&#xd;
+�ܤ�7���&#x14;;�)�@!&#x5;ͯ&apos;&#x7f;Ӷ��n��B&#x1b;A/&#x3;&#x0;�&quot;g���&#x8;&#x13;-�e:&#x6;CDDѾ�١&#x19;���M9�Q����hL� 	�Gb#&#x14;/P�{m�	&#x8;&#x12;(��ǿ~��w��m��&#x3;���&gt;���&#x1b;�0w&#x1e;&#x1c;�ڀP:&#x1e;1X�&#xc;����=�&#xd;��mfS�B0z(&#x2;�&#xf;��`��u:��4u��&#x6;&#x7;���x9nnǙ&#x8;݉z���&#x560;P���&#xd;��C�&#x1c; Q	�&#x3;�n��B&#x1f;.r�s�d0C&#xb;&#x6;�$�*)�@\&#x15;dwť�Vy����E&apos;8G4��=��T�&#x1;R��*�&#x10;�&#x10;�&#x12;�&#xf;�@h��j�Ί�-�&#x7;�ג�j�Q�P&#x5;41U#�9�\0�i&#xe;�&#xd;
+3�e��]]�9��v�&#x1e;�&#xd;
+�&#x1d;�q�-%V0�l3��2&#xd;
+�&#x5fc;��C6�fO}��Е&#x4;mM�Y�&#xc;�O&#x8;�;&#x5;�!(&#x3;���x��]���~�&#x4;�F�?��m:�IL��c�&#x4;��&#x1c;XP�&#x14;i&lt;��=�1f)���&#x18;`��&#xe;�&#x5;U&#x11;Y!&#x18;���U�&amp;M%{��&#x1d;�0�0]�l��&#x1;$&#x1f;.��U	�&#x8;*qG�u&#xe;�&#x16;0�X)đ��&#xc;�&#x6;���˼f[I�&#x16;g�X�I��&#x8;�1P&#xf;4H+&#xf;L6�W&#xe;�&#x1c;|���&#x5;���Z�G|�9��&#xf;X!L00G�=&#x10;&#x1f;i�k�9&#x10;�4#��&#xd;��n��E�b�̳�i�&#x15;��6@p&#x2;�&#x2;��&#xd;
+�Q����&#xb;�g�[�&#x1f;�y���I�_���&#xb;�=&#x6;�&#x7;�h�&#xd;c�@�C�$&#x7;[�����l&gt;-r&#x16;�&#x14;&#x19;&#x1e;���p�xB2i&#x2;��&#x0;������C-��\�7�M�NЫ�&#x13;3t�i&#x3;4�X�&#x3;WZ����%&amp;���]y	��&amp;w&quot;o&apos;��tD��D�`(&#x3;D&apos; &#x7;$&#x11;*&#x12;N�[&apos;���/�&#x7f;����]\�����&#x2;5@�]�j\#&#x15;�Nd&#xc;��X;���xz9.ڿg&#x14;s�+ڿ��&#xc;l&#x5;�&#x1b;�^a�&#x12;6�,&#xd;
+-&#xc;�&#x0;0,�Ќ&#x0;��`r�&#x11;�pH�&#x0;0&#x7;&#x17;�&#x17;&#x1f;M&gt;&lt;�&#xc;&#x5;B�S&#x3;ކ}��&#x17;&#x3;!���	A�0��&#xb;��x1�&#x1e;���{) &#x1a;fiđY���&#x6;P�z(�&#x19;&#x17;&#x8;&#xd;
+��R�x��I\���?�V &#x17;P&#x10;i&#xd;F&#x2;��dL�?&#x1;ː&#x18;�t�b��ͤX�e�U9�-�d:�O�j�-v&#x18;3p;&#x1b;�%&#x14;R&#x2;�#+�僑���}�n�\�����E�˩�N=��@]���F�ڴuf&#x11;��b���3S��}��l�&#x2e9a;_gM�Tއg�&#x19;T3�#&#x2;4I��9�&#xc;� �&#xd;
+�_�&#x2;}`,&apos;=&gt;�s&#x10; �9�o�Q{]�&#x14;Ti,�&#xd;�&#x11;���&#x1a;&#x14;&#x16;��&#xf;D���,�*��2��&#x3;��؉��&#x5;�=�B�D�#�鰥H+��P�J�sh&#xd;
+�&#x14;mQާ&apos;b�;�&#x1e;�a+�?��!�xl�&#x5;&#x15;&#x11;b��`0&quot;�&#x1a;&#x11;�`Eb&#xb;&amp;LDe����&#x1e;�c�DKB1��&#x19;+�4�&#x1;&lt;A�F,�����`zz~�&#x7bf;&#xb;&#x1f;r˭�=h�&#x1e;�Jl&#x19;��Tc��q����xHs��ѡqs&#x5cc;�T��fl2T&#x10;&#x2;$B���&#x5;W��p4�l�%Ñ�#�Õ۫z:[�&#x8;�F�[�C*&#x1a;&#xd;
+��&#x19;e�2&#xc;x�����&#x12;�&#x1e;&#x11;~�&#x19;�vZ_A�t�0��N�+!�T&#x11;���4�68ǭ&#x6;�A��&#xc;�&#x1a;|8�NO}yk�s�&#x16;A�Գ&#x1d;�&#xb;&#x5;4�H&#x11;�&#x11;D&#x0;�&#x2;�b�a�H&#x6;[p=;����&#x17;�C&#xe;�桏{Q3&#x5;�&#x19;��Sb&#x14;��bo���&#x1;���T���U&#x1;�ɿ��&quot;\d&#x16;R�դZ4&#x19;P��A�u^An��X�-&#x7;�&#x8;AI�d؟�&#xf;�n{N�S��}&quot;왏k�����P�m�z��6`&#x8;7��W�������W?�z4&#x6;&#x3;�	#��&#x2;ؾe�z�mɎ�&#x2;yx��|5�&#x1e;���$�����&#xf;�;���	��Q�#D�&#x11;&#xd;
+&#xd;
+5&#x17;�4&#xf;�����^pF�(��&#xd;
+h4&#x7;.J&#x11;&#x3;&#x8;!&#x12;1�P���8��ŗy� �N�9e��&#xf;�&#x17;��&#x5;�ݎ�]�ey9�鶕��5�&#x10;��봽��V�n��h����r�Fҋ�(#��{@�h��n��ESLn��u�D�&#xc;�$&#x11;&#xd;
+!�D�y�s��&#x10;&#x1d;&#x14;��j�&#x6;�pWw��x���v�&#x1e;k&#x3;o&#xb;&#x8;�1��&#x1d;&#x12;F(W�`G)��&#xe;&#x16;&#xd;
+uS���2�F�?�&#x8;d#��D:G�6�ed�&#x1b;��&#x5;Q&#x18;l���_B%[�W�.̨&#x17;6�n�+I�3�b���c��RBq�&#xe;�;&#x5;�;�6���j-s&#x6;�&#x16;P��zq�pѮ.3&#x1a;���[N�&#x18;pؤ����	SQ;���5�J2�&#x6;�x1&#x1b;���i����N;�$��&#x14;�&#x14;�!&#x18; �i_�2� 8�&#x7fc;&#x37f;ir�I9�SB&gt;�����&#xc;JȎ�y�&#x8;�&#xc;J�t,8*��~����y�f5�&#x1c;&#x17;�lu�(�&#x12;ǜ �}���1T��&#x18;&#x8;&amp;(�LzDg�&#x13;��i5~�&#x15;���-�?��`2&#x12;!�C�ql���䣴$&#x1d;U��%&#x6;dV��\`��&#x13;�[q/�(��H&#x2;$&gt;(&#x7;��P�&#xb;	���t3�^_=Ka|�+:���&#x12;a���!:&#x81;j&#x19;k&quot;M&#xf;@@�&#xd;?�������Y=��f����z	�^K&#xc;�.�.��L�l&lt;(&#x13;�q�%��I���ra���&#x16;���ƈ&#xb;A�3�&#x8;�&#x16;&#x1d;�&#x16;�K �&lt;�?�u0Д��*w+��.�&#x16;�&#xd;�&#x7f;&quot;��x&#x4;��4&#x2;�&#x0;&#x11;�`V{�����&gt;�_rϵT�/��j�&#x7;&gt;�&#x13;�!�^��C4�+I&#xc;F�mL&#xf;x�c�о:�����%&#x7;^H�Ox��L��&#x8;�Aﴽ&#xd;
+Lh�&#x13;!�M�=H�����&#x8;�4�@���8���@&#x12;��1&#x1b;�+/v8&#x18;�/�e��S� &#x19;O3�Oiz���LG�Ruɠ�&#x1e;&#x2;&#x4;r3!��L��8��Z��&#xb; X{���ؘ����&#x1b;O&#x14;Ǌ&#x7;�&#x7;;s7&#x7b7;��&#x11;�W2��FZ��&#x3;��	P,J��܂�t�=���&#x1f;��&#x1e;\y��P�B𲐲�&#x3;&gt;��*�N�q�N��[&#xb;��)	C����&#x16;=8�wS�*��2�g��{�&#x7f;�-&quot;�qz�1�&amp;&#x8;#Ha�&#x19;&#x6;��&#x18;��&lt;��㯋��_2�gu�v����&#x1f;&#xf;����\z��&#x10;�hL�&#x13;���RH&#xc;��,��Ҭ&#x7f;&#x2;��lq���H��&quot;�&#x19;&#x4;&amp;�&#x11;�v1�g���&#x4;&amp;��E��X���K���&#x8;��~8u6�ssG&#x8;&#x10;�&#x0;&#x5;�`��m�&#x5;��}�Fa���&#x6;�&#x3;Mo&#x1a;rZ!�1�&#x5;S�(̀Oi�&amp;�&#x1c;�����Si�9&#x12;a�&#x16;^(�Ht&#x1a;R&lt;�1��&#x11;��WN+&#x1e;\,B&lt;B=�^��-&quot;��{&#xc;X�����&#x8;�a)��&#xf;�QΌ1b��&gt;kf����A�&apos;���$&#x1d;UZ	b��!1&#x18;�&#x8;&#x6;u���x�/�T�o&#x7f;B�n&#xf;�{;�B����D�&#xd;
+���]��Ќ�&amp;�&#x1e;��J\�P{�b��v������&#x1f;�F�]�r�&#x10;EWr4&amp;�&#x18;1��F�&#x12;�#L&#xb;Z�RK�؟��^c�1�������/��k꽨x�[���&#x15;ƫ�h���&#x16;մ����m�*��&#x18;���}��m]]��&#x6;Z/�?m��q-�|7�7���䶯Q~��d����4��&#x17;�$]f�lQ?����&#x12;0PU��bzZܧ6&#xc;�&#x6;�D&#x14;��r���&#x17;�4�&#xc;&#x1a;�5���&#x13;��X�Wռ|7o���WŬ�&gt;&#x1c;�&#x15;�ۚ�B�&#xe;p�岚_&#x1f;��o���[~�&#x19;�E8�����&#x14;��{Y��ӟ�&#x1;r���}[Γm�P�o����������E�} �Ot�����~�O&gt;o:�ϛ&#xb;�pq���hҀ�/����c/Ԡa�.�&#x4;��ѧ&#xb;hh���&#x1a;�g���i�{2&#xe;z�X�7����mr�&#xf;��er�.vw�O�&#x1c;,G�Z�y����e&#x1;�����7�.���URᏭ���&#xd;
+p�E{dWuӂNuy[mԾ��T`�d��e5/�o��&#x13;&apos;:������5O|�� ������p��F�&#x0;&#x7f;��&#x16;�&#x6;�����J��~q&#x17;�S�&#x17;��WŴ����|������&#x19;��r�^�cs�&#x38b;I��&#x1f;��&#x4;��t&#x7;	k���&#x8;�&#xe;y�Dmڄ&#x14;i���%�x�2&#x5;.1�)���)�&#x17;&quot;�����M�w&#xc;&#x0;6��&#x17;�(�a6�&#x1f;�&#x1a;(�}H]�&#xd;��B��ar&#x7f;��&#x3;���M˺��&#x3;�n��&#x5fb;&#xf;�l�a�Z�G8KoZM��(�&#x7;��Wϫ&#x11;�#&#x10;�&#x5;�&#x1f;�&gt;�qz��&#x6;���&quot;z^&#x1;֬�&#xc;V.���դ�&#x1;k@��f��SY]�&#x0;^��&#x4;P&#xe;�qs�]_@ò)W��_&#x3;�f&#x6;ӵ��&quot;�|�&#x6;��r�T&#x1d;ҭ��&#x0;}��+(��e�u��hWM2�&#xe;u����&#x0;�UWU9y��&#x12;��&#xb;��.�e&#xd;��F�]�Ų&#x1d;U��w�������}�Z��&#x17;?A&#xb;�Q¸��^�ܵ&#x5;@��^�&#x14;u��k�����O&#x1;ѓ�k��I����&#x1e;�0�&#x10;c&#x7f;��iy�&quot;�1oTͯ�;p��ݛr�%�9�mU�:L� ݑ/�:�&#x1c;��&#x14;�&amp;um�&#xf;0��wN�ݿ&#x3;�z�3n����lʶ�qw��&amp;&amp;&#xd;�E�C�5����ꥍ&#x17;$WQɘ�rV��î�f�=|���4ݳ.��*���w=:&#x3;����n&#xd;�DX�R��ұ�m��2��5&lt;�$uy&#xd;sUL�  ����rپ/�&#x5eb;���,ݵ�Mk���G�w&amp;�NϬU&#x0;)������(l�Hz|�S�3}&#xd;S&#x3;�x�QP5_��&#x18;W�CB7��&#x4;������r&#x2;=�_`�&#xb;�&#x7;�����Y&amp;�v�&#x1e;0���&#x1c;��w��lO*�|���\�&#x5;��Z�,�&#x14;�&#xd;
+�&#x1c;��v}&#x16;3-ܴ֝-D���H�&#x19;�;���=�f��C�b&gt;�\tY���*;l�䙍K�/o�Uy&#x7;&#x3;��&lt;&#x1d;X&#x4;(��^^���_�d��1�d�|�&#xd;7̯�lu|�X\O���hr��&#xe;�=�&#x1f;?v�;�QL �&#x2;�&#x1e;�^�o�&#xb;��o?,f�������xՓ�Y�`����%�\�b��fU�����{�$&#xb;6o&#x7f;�����d��&#x13;&#x0;�&#x1f;����e�&#x7f;l~�F��&#x7f;��&#x7f;tY�	�x�[K�Ԓu�ߴ���I�֘��&#x15;�����]��7&#x1d;�.��Y9j����?����NNfk�~�����.&#x10;@�����&quot;��&#x15;�f��WvLq��}J2���i�.6�e3K&#x0;��e�}g3���ݖk��z��ԿyD�&apos;P�r&#x1c;uc8jo����&#x7;B&lt;/&#x1b;��&lt;��b��hquT�o�,s�ր���Gp�T��%����&amp;Gk��9��G���&#xd;
+�&#x1e;&#x6;u�X��I�ǳ��&#xf;&#x1d;}�z&#x1f;]��&#x1f;��&#x1d;��sT&#x4;��A�&#x3;){�n�4w�@�m�&#x13;&#x1f;��&gt;Zn���u&#x1b;�D9�h��O��ʨ&#x4;C�0��|e&amp;�a3�P�q&amp;�q�&#x1d;&amp;r�&gt;7f�0�#�&#x19;&#x37f;&#x5f8;����V�͢m�ے�&#x13;t�99�7���c�&#x5;&lt;wZ-�#@�&apos;#:��&#x17;�.B�kaq[�&#x6;h-gi-����hQ&#x1f;-Kp�d������_att�x��&#xf;s&#x4;�r���&#x19;�	:&#x10;��m�~����1&#x1e;&#x1;�nG&#x1b;bqtU�&#x3;x���`tG�	��Ӵ���o7;�=�I���_��Iz����L|&#x1d;xw�;��ڛ�#a��N&#x0; ��܁&#xd;�`�fܽ&gt;��&#x4;~�k�z��n��#�E��g&#xe;�R����t&#x5;��[&#xd;�6�x�k���z�&#x1c;�_�b~CR��&#x1c;��+#�&gt;�B��^��Oݽ�8&#x15;�pM�zPY���d����;�����~&#x1c;x��E�J@�_��?��&#x11;t�fk{�E��jT/��Ū&#x1d;u�0JI*U�[�&#x1f;	1��QK!�D&#x19;Ru�^k�&#x1d;�bv�&#x12;�|�0J��\2�q{�M�&lt;�%p9�&#x15;��˥&#x1f;�&#x0;6G�Us3Jk�]�q9�L�t���U�u@��`��&#x1e;&#x7;Q��u&#x13;S&#x6;�R����&#x3;L�=��n&#x0;&#x0;</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">incoming.telemetry.mozilla.org</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+            <stringProp name="HTTPSampler.path">/submit/telemetry/3d85870f-f597-459e-96fc-c101b9116e96/modules/Firefox/66.0.3/release/20190409155332?v=4</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Date" elementType="Header">
+                  <stringProp name="Header.name">Date</stringProp>
+                  <stringProp name="Header.value">Wed, 17 Apr 2019 00:00:34 GMT</stringProp>
+                </elementProp>
+                <elementProp name="Accept-Language" elementType="Header">
+                  <stringProp name="Header.name">Accept-Language</stringProp>
+                  <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                </elementProp>
+                <elementProp name="Content-Encoding" elementType="Header">
+                  <stringProp name="Header.name">Content-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json; charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Accept-Encoding" elementType="Header">
+                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                </elementProp>
+                <elementProp name="User-Agent" elementType="Header">
+                  <stringProp name="Header.name">User-Agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname=" 141 /submit/telemetry/ecd7ceb4-5b23-415b-85fb-b224fec53147/event/Firefox/66.0.3/release/20190409155332?v=4" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&#x1f;�&#x8;&#x0;&#x0;&#x0;&#x0;&#x0;&#x0;&#xd;
+�Xksۺ&#x11;�+,?�����C��m�&#x1d;9���q�8i��d@&#x12;�&#x10;�u&#x1;P���&#x7f;�Y��%[ɍ�i�I2�b���&#x1e;�]���ۚ�S��x��&#x13;[��#IG	�&#x3;&apos;���&#x13;xa��,v��0�x&#x12;�^0�n&quot;9Ӣ*gL����M&#x1c;7p��;ם�o8&#x19;�����\q��hO�&#x13;��u.&#x12;�О��L&amp;K�y�&#x1b;IF6�ȉ&#x2;,�&#x1b;����ή&#x1b;�&#x13;/&#xc;}&#x7f;���&#x15;��BH�U�}�v&#x14;&#xd;܁&#xf;Q*T�����3p4�$$��w��&#xc;&quot;hꬒ�&#x11;�M�T�i,ڣ}�&#x2;�P���_���9��)n��&#x10;��&#x15;K�/�F&#x19;S5��J&#x5;��e�p��4���(�Ҭ��)&#x1c;&#xb;�0�\�sb+��&#x14;�w���$L3&apos;t��A&#x10;&quot;�eC�/L�q6&#x1e;��&#x14;�U&#x13;�ʂ8&#xe;F����(F�X��i�:i&#x8;3#ߍ&#x3;���+��)��y� �Slnp�ȁ�I��������a�̥iU�9+قK�oJQ&#x85;&lt;Ǹ�K#[&#x14;��&#x7f;U���&#x12;yk���	%���Y�Ҿ�t�1&#x8;F^4�~�k��(&#x1;���f?�!&#xd;I.pt&#x13;��&#xb;�&#x1;g�&#xd;��	b�&#x1d;6	|&apos;e�$�&lt;&#x1c;G1A��+!��0&#x1e;߶�3�&#x7;�1w˓����I�.s�(ȜI�r���&amp;|2����}��7&#xf;��&#x3;�?��#8�:�&#x7f;&#x4;�M��b��&#x15;&#x13;9�s&#x1c;Uˆ&#x1b;�K]&quot;-�&#xf;v�R��.@e��&apos;&#x7;�~�v�[{D�|y$z��e&#x7;�)����O8��*�&#xb;:K��Jn�g�t�&#x5;C&#x4;HHݰ|�6$�@E�h4&#x4;���!��&#x5;=()�$�&#x1b;�&#x5;�%/&#x1b;`�u�9�0c�ȷ�4:��*�&#x3;�&#xe;ع�E���#ܦa&#x92;%�;�&#x1a;�������H��&lt;���&#x1d;��&#x4;���%ņ\��L����V&#x18;\]���a?�w���y���&#x1b;wʧ�;C��W6&#x5;�27���&#xf;&#x2;&gt;���7�&#xe;��&#x3;אB�rS&#x11;J�����˕H�%Kn��&#xb;&#x5;�=&#x14;��&#x13;�[�g&#x4;�7M&#x11;&#x13;D&#x10;��燐��&quot;r&gt;��]�&#x7f;q&#x6;%�;N�L͝&#x3;Kf��p���}�&#x0;�J[g�TT�$��;��ًy�&#x1;�0&#x10;����&#xf;,�&#x3;�S&#x16;b�&quot;�в�pv^�%I�[rb�&gt;H��&#x7;��&#x15;�T�3�&#xd;@#[7�.�E�&gt;/�9�&#x2;��ӌ�&#x13;1�&#x1a;&#x17;�����U&quot;EݖM�t&gt;�&#x7b2;�W��jfE �yO	�gPp7��&#x12;&#x1c;�3&#x13;�ɢQ�v�b��̋&lt;�&gt;����s��&#x1d;&#x2;��&#x14;+ʞ&#xd;&#x2;K�M&#x14;XG&#x6;E�Iz�?&lt;6 �V�&#x14;i��n6&#xf;&#x6;�b�N�*�&#x3;L��n�&#x19;�0\ٞ�μp&#x0;&#x14;&#xd;&lt;&#x1f;���|י�&#x1d;t&amp;�&#xe;1����4ј���&#x13;��R�k�8#ʜ�&#x1f;D���Fd&#xd;
+�&#x11;��b�&#x4;_LH&#x4;*&#x7;e,�&#x1a;�&#x11;&#x4;��MZ�Z&#x2;�2H�3�H�a&#x17;&quot;&#x1c;&#x14;F%&#xc;�٩�ztu&#x17;usٶ&#x5;��K�&#x1b;E��Y&#x17; [�&#x7f;��D&amp;xz�&#x14;��@F*&lt;F�N[V�&#x15;�Z;T&#x16;	K+V&amp;&lt;�`[���m�&#x1e;���~&#x1f;&#x17;��qk&amp;�&#x1e;�&#x1a;�&#x6;W��L&#x1a;Nl!&#x1f;�&#x0;{&#xe;F���a�.�����Nܱ����9����!ԇj&#xd;(�vW&lt;1&#x5;�Dn�l&#xc;�vLg�xfbc���H&#xd;��z&#xb;&#x1f;�&#x1f;+g��k�I�4_�d��P\k�mbk&#x12;CN?���j�h��Zt( ��)�9/���^���&#x11;?�R�m��[�)�&#x17;F�&#x4;��!_w&#x1;ޛ�&#xd;&#x15;�&#x1b;��������&#x1e;��H�@�X~�&#xb;��n�$��&#x17;�\4h���hWS��6�܏G-5)&#x1d;D��)�U��~�A52&#x7;0��H&#xd;�&#x3;S|&#x7;h%n0�Y&quot;���-&#x18;�#&#x0;w���&lt;�&#x7;�Ln�w�&lt;��3}�{MNm۠u&#x18;G�&gt;�&#x1f;M�C]p=&#x10;h�Vg�&#xd;j��zP#&#x14;�&#xd;
+��z]ɛ&#x1;J�f;Xj��d���q&#x0;���&#xf;5��&#xf;&#x15;&#x8;w�L��T!��uF��ՙ&#xe;R&#x17;h�.��z���!Pi,r&#x4;�9��&#x0;�B}%&#x18;i+�2&#xb;S��EU-r��Nj&#x1f;U&#x1;&#xb;����Q7�&#x6;KQg���&#x17;&amp;�&#x1f;��OϪ�&#x14;�/�O��&#xe;6�y&#xb;HA=�t�E[�&#xd;
+a�=�o/0C&#x11;T�g�����]?&#x0;�&gt;k���Y�K�6�d�Ͽ�b��^�q���F�Q`n��&#x5ca;�	w�4�c&amp;��o�k���YUySpG�&amp;�������h;�A%&#x17;���xT�URћ�;�&#x1f;�N���gTdp�IHٺ�ڗ.K�F&#x1e;��k��&#x16;D2�&#xb;t��]S&#x7f;r�X{T�尌&#xf;�^2m�&#xd;&#x1a;�+�▀�D[Uf��g���%X&#x1f;lhaCz�����mL�6&amp;&apos;�(-�&#x1b;R��p�J�&#x1f;���.�&#x16;C�{�m]��v{�Qg&#xf;Y&#x11;�y$�{&#x7;%�|�=&amp;wb��g�O� Te���E��ݏ��	���N����3�h&#x8;��&#x7f;�F&amp;ݧe�X�&gt;��{�?Hd[&gt;w�P��u�y�s�&#x1b;&#xe;�v��ZVZ}=�~8p�&#x1a;�p���i�c7@n.je���=��LV��!ط�d+N&#x2;H9�#�)�[��V�&#x1;*&#xd;
+W�&#x1d;&lt;��e]���?�&#x8;�eb��&#xc;!AOd���w�Z.&#x8c5;�[;]caeb&#x3;�B�,xg%�&#x5;q/���vǟ&#x1e;vĝpbJ��&amp;�&#x15;=�H&#xf;2�}�m�Yk��&#x6;��&#x13;(�&#x18;�m�&#x10;�&#x1c;�P	��`������&#x1e;&#x16;&#x7;��/��&#x1e;&#x0;ȥ�k����g�&#x6;�D/����&#x7;�&#x7;,&#x1d;}ó|K&#xf;����2�6{âw��k��`�&#x3;ϛD���h�z&#x11;XBK�͔���#��\�_k�&#x14;���j�c��P����&#xe;�N&#x14;9^�Q4j&#x1b;e�j�ڠ���-�����!��I�qg�{.;�!̹���1s�3&#x3;m:u��&#xe;�1�&#x15;݃�&#x5;&#x13;�&#x1b;y&#x7;Vw��f&#x11;&#x8;&#x13;�&apos;�\�]�q(zg��&#x7;�4kF&#xd;&#x19;&#x0;&#x0;</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">incoming.telemetry.mozilla.org</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+            <stringProp name="HTTPSampler.path">/submit/telemetry/ecd7ceb4-5b23-415b-85fb-b224fec53147/event/Firefox/66.0.3/release/20190409155332?v=4</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Date" elementType="Header">
+                  <stringProp name="Header.name">Date</stringProp>
+                  <stringProp name="Header.value">Wed, 17 Apr 2019 00:00:59 GMT</stringProp>
+                </elementProp>
+                <elementProp name="Accept-Language" elementType="Header">
+                  <stringProp name="Header.name">Accept-Language</stringProp>
+                  <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                </elementProp>
+                <elementProp name="Content-Encoding" elementType="Header">
+                  <stringProp name="Header.name">Content-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json; charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Accept-Encoding" elementType="Header">
+                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
                 </elementProp>
                 <elementProp name="User-Agent" elementType="Header">
                   <stringProp name="Header.name">User-Agent</stringProp>
